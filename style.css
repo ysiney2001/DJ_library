@@ -569,24 +569,221 @@ h2 {
   border-radius: 50%;
 }
 
-.storage-note {
+.cloud-benefit-note {
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
-  background: var(--amber-50);
-  border-left: 3px solid var(--amber-500);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-size: 0.8rem;
-  color: var(--amber-700);
+  gap: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--emerald-bg);
+  border-left: 3px solid var(--emerald);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: 0.82rem;
+  color: var(--slate-700);
   line-height: 1.5;
 }
 
-.storage-note svg {
+.cloud-benefit-note svg {
   flex-shrink: 0;
-  color: var(--amber-500);
-  margin-top: 1px;
+  color: var(--emerald);
+  margin-top: 2px;
 }
+
+.cloud-benefit-note strong {
+  color: var(--emerald-deep);
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+}
+
+/* ═══════════════════════════════════════════════
+   DEDICATED CLOUD VAULT (NO SPACE REQUIRED)
+   ═══════════════════════════════════════════════ */
+.cloud-vault {
+  background: var(--slate-900);
+  padding: 5.5rem 0;
+  color: var(--white);
+}
+
+.cloud-vault-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.cloud-vault-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: var(--emerald-mist);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 0.4rem 1.1rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1.25rem;
+}
+
+.cloud-vault-badge svg {
+  color: var(--emerald);
+}
+
+.cloud-vault h2 {
+  color: var(--white);
+  font-size: clamp(1.85rem, 3.8vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
+}
+
+.cloud-vault-sub {
+  color: var(--slate-300);
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto 3.5rem;
+  line-height: 1.6;
+}
+
+.cloud-vault-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.cloud-vault-card {
+  background: var(--slate-800);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: 2.2rem 1.75rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cloud-vault-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.vault-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--emerald);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.35rem;
+}
+
+.cloud-vault-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.65rem;
+}
+
+.cloud-vault-card p {
+  color: var(--slate-300);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+/* ── CART MICROCOPY & DELIVERY CLOUD NOTES ── */
+.cart-microcopy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.85rem;
+  text-align: left;
+  background: var(--emerald-bg);
+  border: 1px solid var(--emerald-mist);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+}
+
+.microcopy-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--emerald-deep);
+}
+
+.microcopy-item svg {
+  color: var(--emerald);
+  flex-shrink: 0;
+}
+
+.cta-microcopy {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.15);
+  max-width: 360px;
+  margin: 1.25rem auto 1.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.cta-microcopy .microcopy-item {
+  color: var(--emerald-mist);
+}
+
+/* ── PAYMENT TRUST STRIP (Near checkout) ── */
+.payment-trust-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--slate-100);
+}
+
+.pay-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--slate-500);
+  text-align: center;
+  line-height: 1.25;
+}
+
+.pay-trust-item svg {
+  color: var(--emerald);
+  flex-shrink: 0;
+}
+
+.delivery-cloud-note {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--emerald-bg);
+  border: 1px solid var(--emerald-mist);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  margin-top: 1.25rem;
+  font-size: 0.82rem;
+  color: var(--slate-700);
+  line-height: 1.5;
+}
+
+.delivery-cloud-note svg {
+  color: var(--emerald);
+  flex-shrink: 0;
+}
+
+.delivery-cloud-note strong {
+  color: var(--emerald-deep);
+}
+
 /* ═══════════════════════════════════════════════
    PROMOTIONAL BANNER
    ═══════════════════════════════════════════════ */
@@ -1535,7 +1732,8 @@ h2 {
   }
 
   .testimonials-grid,
-  .trust-strip {
+  .trust-strip,
+  .cloud-vault-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
@@ -1580,6 +1778,7 @@ h2 {
   .btn-whatsapp.btn-lg { font-size: 1rem; }
 
   .cta-price-now { font-size: 2.4rem; }
+  .payment-trust-strip { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
 
   .whatsapp-float {
     width: 50px; height: 50px;
