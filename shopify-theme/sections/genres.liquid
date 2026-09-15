@@ -1,0 +1,48 @@
+﻿<section class="genres" id="genres">
+  <div class="genres-inner">
+    <p class="section-label">{{ section.settings.label | default: 'MUSIC FOR DIFFERENT CROWDS, EVENTS, AND GENERATIONS' }}</p>
+    <h2>{{ section.settings.heading | default: 'A broad collection covering classic favorites, modern club music, and international genres.' }}</h2>
+    <div class="genre-grid">
+      <span class="genre-pill reveal">Hip-Hop & R&B (Classic & Modern)</span>
+      <span class="genre-pill reveal">Pop, Dance & Chart Hits</span>
+      <span class="genre-pill reveal">House, Tech House & Deep House</span>
+      <span class="genre-pill reveal">EDM, Electro & Festival Bangers</span>
+      <span class="genre-pill reveal">70s Disco, Funk & Soul</span>
+      <span class="genre-pill reveal">80s Pop, New Wave & Rock</span>
+      <span class="genre-pill reveal">90s Dance, Eurodance & Old School</span>
+      <span class="genre-pill reveal">2000s & 2010s Club Anthems</span>
+      <span class="genre-pill reveal">Reggaeton, Latin & Moombah</span>
+      <span class="genre-pill reveal">Afrobeats, Amapiano & Dancehall</span>
+      <span class="genre-pill reveal">Wedding & Party Classics</span>
+      <span class="genre-pill reveal">Acapellas, Tool & DJ Edits</span>
+      <span class="genre-pill reveal">Remixes, Mashups & Bootlegs</span>
+      <span class="genre-pill reveal">Clean & Radio Versions</span>
+      <span class="genre-pill reveal">Transition Tracks & Quick Hits</span>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Genres Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "MUSIC FOR DIFFERENT CROWDS, EVENTS, AND GENERATIONS"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A broad collection covering classic favorites, modern club music, and international genres."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Genres Section"
+    }
+  ]
+}
+{% endschema %}

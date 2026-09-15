@@ -1,0 +1,72 @@
+﻿<section class="testimonials" id="testimonials">
+  <div class="testimonials-inner">
+    <p class="section-label">{{ section.settings.label | default: 'WHAT DJs ARE SAYING' }}</p>
+    <h2>{{ section.settings.heading | default: 'Built by a DJ. Trusted by DJs.' }}</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Saved me at least 40 hours of prep before wedding season. The 80s and 90s folders alone paid for the entire pack on my first gig."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">
+            <span>MJ</span>
+          </div>
+          <div class="testimonial-info">
+            <strong>Marcus J.</strong>
+            <span>Mobile & Wedding DJ · Chicago, IL</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Clean tags, proper BPM and key detection. Dropped straight into Rekordbox with zero corrupted files. Exactly what was described."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">
+            <span>DR</span>
+          </div>
+          <div class="testimonial-info">
+            <strong>Dave R.</strong>
+            <span>Resident Club DJ · Miami, FL</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"I was skeptical about buying a library online, but delivery was instant and the track selection across genres is genuinely solid."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">
+            <span>AL</span>
+          </div>
+          <div class="testimonial-info">
+            <strong>Andre L.</strong>
+            <span>Open-Format DJ · London, UK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "WHAT DJs ARE SAYING"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Built by a DJ. Trusted by DJs."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials"
+    }
+  ]
+}
+{% endschema %}

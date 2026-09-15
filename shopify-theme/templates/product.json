@@ -1,0 +1,31 @@
+﻿{
+  "sections": {
+    "pricing_card": {
+      "type": "pricing-card",
+      "settings": {}
+    },
+    "included": {
+      "type": "included",
+      "settings": {}
+    },
+    "dual_section": {
+      "type": "dual-section",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "pricing_card",
+    "included",
+    "dual_section",
+    "faq",
+    "footer"
+  ]
+}

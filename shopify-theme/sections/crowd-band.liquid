@@ -1,0 +1,43 @@
+﻿<section class="crowd-band" id="crowd">
+  {% if section.settings.image != blank %}
+    <img src="{{ section.settings.image | image_url: width: 1400 }}" alt="Energetic crowd at DJ event" loading="lazy">
+  {% else %}
+    <img src="{{ 'crowd-energy.jpg' | asset_url }}" alt="Energetic crowd at DJ event" loading="lazy">
+  {% endif %}
+  <div class="crowd-overlay">
+    <div class="crowd-content">
+      <h2>{{ section.settings.heading | default: 'Plug In. Load Up.<br>Own the Night.' }}</h2>
+      <p>{{ section.settings.subheading | default: 'Built for DJs who perform — from small gigs to packed clubs.' }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Crowd Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Plug In. Load Up.<br>Own the Night."
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Built for DJs who perform — from small gigs to packed clubs."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Crowd Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Crowd Banner"
+    }
+  ]
+}
+{% endschema %}

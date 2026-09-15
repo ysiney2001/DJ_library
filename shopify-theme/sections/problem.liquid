@@ -1,0 +1,115 @@
+﻿<section class="problem" id="problem">
+  <div class="problem-inner">
+    <div class="problem-text">
+      <p class="section-label">{{ section.settings.label | default: 'THE REALITY OF BUILDING A DJ LIBRARY' }}</p>
+      <h2>{{ section.settings.heading | default: 'Building a Great DJ Collection Takes Years. Or Just One Download.' }}</h2>
+      <p class="problem-desc">{{ section.settings.description | default: 'Most DJs spend hundreds of hours searching for tracks, buying expensive singles, digging through record pools, and fixing missing metadata. DJ Crate Library is designed to solve that problem in one step.' }}</p>
+      <ul class="check-list">
+        <li class="reveal">
+          <span class="check-dot"></span>
+          <span>{{ section.settings.check1 | default: 'Skip years of buying tracks one by one' }}</span>
+        </li>
+        <li class="reveal">
+          <span class="check-dot"></span>
+          <span>{{ section.settings.check2 | default: 'Pre-sorted by genre, era, and energy level' }}</span>
+        </li>
+        <li class="reveal">
+          <span class="check-dot"></span>
+          <span>{{ section.settings.check3 | default: 'Clean file tags: artist, title, genre, year' }}</span>
+        </li>
+        <li class="reveal">
+          <span class="check-dot"></span>
+          <span>{{ section.settings.check4 | default: 'Ready to import into any major DJ software' }}</span>
+        </li>
+      </ul>
+      <div class="callout-card reveal">
+        <div class="callout-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div>
+          <strong>{{ section.settings.callout_title | default: 'Estimated Record Pool Cost: $300–$600/year' }}</strong>
+          <span>{{ section.settings.callout_text | default: 'Get a comprehensive foundational library for a fraction of what DJ record pools charge annually.' }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="problem-image">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 600 }}" alt="{{ section.settings.heading }}" loading="lazy">
+      {% else %}
+        <img src="{{ 'dj-equipment.jpg' | asset_url }}" alt="DJ equipment in club" loading="lazy">
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Problem Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "THE REALITY OF BUILDING A DJ LIBRARY"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Building a Great DJ Collection Takes Years. Or Just One Download."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Most DJs spend hundreds of hours searching for tracks, buying expensive singles, digging through record pools, and fixing missing metadata. DJ Crate Library is designed to solve that problem in one step."
+    },
+    {
+      "type": "text",
+      "id": "check1",
+      "label": "Checklist Item 1",
+      "default": "Skip years of buying tracks one by one"
+    },
+    {
+      "type": "text",
+      "id": "check2",
+      "label": "Checklist Item 2",
+      "default": "Pre-sorted by genre, era, and energy level"
+    },
+    {
+      "type": "text",
+      "id": "check3",
+      "label": "Checklist Item 3",
+      "default": "Clean file tags: artist, title, genre, year"
+    },
+    {
+      "type": "text",
+      "id": "check4",
+      "label": "Checklist Item 4",
+      "default": "Ready to import into any major DJ software"
+    },
+    {
+      "type": "text",
+      "id": "callout_title",
+      "label": "Callout Title",
+      "default": "Estimated Record Pool Cost: $300–$600/year"
+    },
+    {
+      "type": "text",
+      "id": "callout_text",
+      "label": "Callout Text",
+      "default": "Get a comprehensive foundational library for a fraction of what DJ record pools charge annually."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Section Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Problem Section"
+    }
+  ]
+}
+{% endschema %}

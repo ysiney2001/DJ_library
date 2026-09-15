@@ -1,0 +1,96 @@
+﻿<section class="faq" id="faq">
+  <div class="faq-inner">
+    <p class="section-label">{{ section.settings.label | default: 'FREQUENTLY ASKED QUESTIONS' }}</p>
+    <h2>{{ section.settings.heading | default: 'Got Questions? We Have Answers.' }}</h2>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>
+          <span>Do I need 380GB of free space on my laptop right now to buy this?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p><strong>No, absolutely not.</strong> You receive <strong>Lifetime Cloud Access</strong> to a private high-speed cloud drive. You don’t need to download all 380GB at once. You can leave the entire collection safely in the cloud and download only the specific crates, genres, or playlists you need for your upcoming gigs.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>
+          <span>How is the library organized in the cloud so I can find tracks quickly?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>The cloud drive is professionally organized into crystal-clear folder structures: <strong>by Era (70s, 80s, 90s, 2000s, 2010s, 2020–2024), by Genre (15+ dedicated categories), and by Vibe/Event Type (Club, Mobile, Radio Edits, Intros/Outros)</strong>. Every file is tagged with accurate Artist, Title, BPM, and Key metadata for instant searching and selective downloading.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>
+          <span>How do I receive the library after payment?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>After your payment is confirmed, you will receive your private Cloud Drive link with simple access instructions immediately via email and order confirmation. Everything is digital and accessible on phone, Mac, and PC.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>
+          <span>What payment methods do you accept?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>We accept all major credit and debit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and Shop Pay through our encrypted, bank-grade checkout.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>
+          <span>What DJ software is this compatible with?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>The library works with all major DJ software including Serato DJ, Rekordbox, Traktor, Virtual DJ, and Engine DJ. The files are standard 320kbps MP3 format, which is universally supported. Optional pre-organized Serato crates are also included.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>
+          <span>What if my download link stops working?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Simply contact our support team. We will provide a fresh access link at no additional cost. Every order is backed by our free lifetime redelivery guarantee.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>
+          <span>Do I get lifetime access, or is this a one-time download?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>You receive <strong>Lifetime Cloud Access</strong> with no recurring subscriptions or monthly fees. The link remains active so you can stream, preview, and download your music crates whenever you need them.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "FREQUENTLY ASKED QUESTIONS"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Got Questions? We Have Answers."
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Section"
+    }
+  ]
+}
+{% endschema %}

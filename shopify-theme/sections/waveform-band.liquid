@@ -1,0 +1,25 @@
+﻿<div class="waveform-band">
+  {% if section.settings.waveform_image != blank %}
+    <img src="{{ section.settings.waveform_image | image_url: width: 1400 }}" alt="" loading="lazy">
+  {% else %}
+    <img src="{{ 'waveform.jpg' | asset_url }}" alt="" loading="lazy">
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Waveform Band",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "waveform_image",
+      "label": "Waveform Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Waveform Band"
+    }
+  ]
+}
+{% endschema %}

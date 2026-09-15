@@ -1,0 +1,48 @@
+﻿<section class="perfect-for" id="audience">
+  <div class="perfect-inner">
+    <p class="section-label">{{ section.settings.label | default: 'WHO BENEFITS MOST' }}</p>
+    <h2>{{ section.settings.heading | default: 'Designed for Working DJs Across Every Style' }}</h2>
+    <div class="perfect-grid">
+      <div class="perfect-card reveal">
+        <img src="{{ 'dj-performing.jpg' | asset_url }}" alt="Club and bar DJ performing" loading="lazy">
+        <h4>Club & Bar DJs</h4>
+        <p>Stay ready for any crowd with peak-time bangers, warm-up grooves, and crowd-pleasing anthems across genres.</p>
+      </div>
+      <div class="perfect-card reveal">
+        <img src="{{ 'mobile-dj.jpg' | asset_url }}" alt="Mobile DJ setup at wedding" loading="lazy">
+        <h4>Mobile & Wedding DJs</h4>
+        <p>Cover every age group — grandparents, parents, and college friends — with disco, 80s, 90s, 2000s, and current hits.</p>
+      </div>
+      <div class="perfect-card reveal">
+        <img src="{{ 'headphones.jpg' | asset_url }}" alt="DJ headphones on equipment" loading="lazy">
+        <h4>Bedroom & Beginner DJs</h4>
+        <p>Skip the painful, expensive process of buying individual tracks. Start your journey with a massive, pro-level foundation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Perfect For",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "WHO BENEFITS MOST"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Designed for Working DJs Across Every Style"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Perfect For"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,27 @@
+﻿<section class="promo-banner" id="banner">
+  <div class="banner-inner reveal">
+    {% if section.settings.banner_image != blank %}
+      <img src="{{ section.settings.banner_image | image_url: width: 1200 }}" alt="DJ Crate Library Banner" loading="lazy">
+    {% else %}
+      <img src="{{ 'banner2.png' | asset_url }}" alt="DJ Crate Library Banner" loading="lazy">
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Promotional Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Promotional Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promotional Banner"
+    }
+  ]
+}
+{% endschema %}

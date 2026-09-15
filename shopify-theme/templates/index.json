@@ -1,0 +1,91 @@
+﻿{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {}
+    },
+    "waveform_band": {
+      "type": "waveform-band",
+      "settings": {}
+    },
+    "stats_bar": {
+      "type": "stats-bar",
+      "settings": {}
+    },
+    "problem": {
+      "type": "problem",
+      "settings": {}
+    },
+    "gallery_strip": {
+      "type": "gallery-strip",
+      "settings": {}
+    },
+    "included": {
+      "type": "included",
+      "settings": {}
+    },
+    "promo_banner": {
+      "type": "promo-banner",
+      "settings": {}
+    },
+    "pricing_card": {
+      "type": "pricing-card",
+      "settings": {}
+    },
+    "genres": {
+      "type": "genres",
+      "settings": {}
+    },
+    "dual_section": {
+      "type": "dual-section",
+      "settings": {}
+    },
+    "crowd_band": {
+      "type": "crowd-band",
+      "settings": {}
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {}
+    },
+    "curator_strip": {
+      "type": "curator-strip",
+      "settings": {}
+    },
+    "perfect_for": {
+      "type": "perfect-for",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {}
+    },
+    "final_cta": {
+      "type": "final-cta",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "waveform_band",
+    "stats_bar",
+    "problem",
+    "gallery_strip",
+    "included",
+    "promo_banner",
+    "pricing_card",
+    "genres",
+    "dual_section",
+    "crowd_band",
+    "testimonials",
+    "curator_strip",
+    "perfect_for",
+    "faq",
+    "final_cta",
+    "footer"
+  ]
+}
